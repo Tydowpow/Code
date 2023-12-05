@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hotel Luxe</h1>
+        <p>Book your perfect room</p>
+    </header>
+
+    <section id="rooms">
+        <div class="room" id="room1">
+            <img src="room1.jpg" alt="Room 1">
+            <button onclick="bookRoom(1)">Book Now</button>
+        </div>
+        <div class="room" id="room2">
+            <img src="room2.jpg" alt="Room 2">
+            <button onclick="bookRoom(2)">Book Now</button>
+        </div>
+        <!-- Add more room divs as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hotel Luxe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.room {
+    margin: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+function bookRoom(roomNumber) {
+    alert("Room " + roomNumber + " booked successfully!");
+    // Implement further booking logic as needed
+}
